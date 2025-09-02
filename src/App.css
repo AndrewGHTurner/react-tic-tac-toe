@@ -1,42 +1,42 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+.square{
+  width: 20vh;
+  height: 20vh;
+  font-size: 15vh;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.squareX{
+  color: red;
+  width: 20vh;
+  height: 20vh;
+  font-size: 15vh;
+  padding: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.squareO{
+  color: green;
+  width: 20vh;
+  height: 20vh;
+  font-size: 15vh;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.winnerText{
+  font-size: 3vh;
 }
 
-.card {
-  padding: 2em;
+.board-row{
+  display: flex;
 }
 
-.read-the-docs {
-  color: #888;
+.board{
+  align-self: center;
+}
+
+.app{
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
 }
