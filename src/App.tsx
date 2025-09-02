@@ -33,6 +33,11 @@ export default function App() {
         if(state[y + 1][x + 1] == char && state[y + 2][x + 2] == char)//diagnal
           return true;
       }
+      else if (y == 2)
+      {
+        if(state[y - 1][x + 1] == char && state[y - 2][x + 2] == char)//diagnal
+          return true;
+      }
     }
 
     if(x == 1)
@@ -50,6 +55,11 @@ export default function App() {
       if(y == 2)
       {
         if(state[y - 1][x - 1] == char && state[y - 2][x - 2] == char)//diagnal
+          return true;
+      }
+      else if(y == 0)
+      {
+        if(state[y + 1][x - 1] == char && state[y + 2][x - 2] == char)//diagnal
           return true;
       }
     }
